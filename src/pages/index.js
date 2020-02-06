@@ -8,48 +8,46 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Acompanhe pela Twitch</>,
+    imageUrl: 'img/undraw_press_play_bx2d_red.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Participe com a gente na <a href="https://www.twitch.tv/javadevzone" target="_blank">Twitch</a> acompanhando cursos ou desenvolvendo algum projeto open source.
       </>
     ),
+    btnUrl: 'https://www.twitch.tv/javadevzone',
+    btnDesc: 'Go Twitch'
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Somos Collabcode</>,
+    imageUrl: 'img/undraw_friends_online_klj6_red.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Fazemos parte da <bold>
+          <a href="https://collabcode.training/" target="_blank">Collabcode</a>
+        </bold>, uma comunidade focada na troca de conhecimentos, onde cada um contribui como pode e ajuda o próximo para que todos alcancem seus objetivos e realizem seus sonhos..
       </>
     ),
-  },
-  {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    btnUrl: 'https://collabcode.training/',
+    btnDesc: 'Go Collabcode'
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, btnUrl, btnDesc}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames('col col--4', styles.feature)}>
+    <div className={classnames('col', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3 className="text--center">{title}</h3>
+      <p className="text--center">{description}</p>
+      <div className="text--center">
+<a className={classnames('button button--outline button--secondary button--lg')} href={btnUrl} target="_blank">{btnDesc}</a>
+      </div>
+      
     </div>
   );
 }
