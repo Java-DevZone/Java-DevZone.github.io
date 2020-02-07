@@ -31,3 +31,8 @@
 .footer__items {
   text-align: center;
 }
+
+.markdown p {
+  line-height: 1.8125rem;/* 29px */
+  font-size: 1.125rem !important; /* 18px */
+}
