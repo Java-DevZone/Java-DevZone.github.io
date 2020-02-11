@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Java DevZone',
   tagline: 'Gostamos de java, aprendemos sobre tudo.',
-  url: 'https://Java-DevZone.github.io',
+  url: 'https://java-devzone.github.io/',
   baseUrl: '/',
   favicon: 'img/favicon.png',
   organizationName: 'Java-DevZone', // Usually your GitHub org/user name.
@@ -17,7 +17,7 @@ module.exports = {
       links: [
         {to: 'blog', label: 'Blog', position: 'right'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Java-DevZone',
           label: 'GitHub',
           position: 'right',
         },
