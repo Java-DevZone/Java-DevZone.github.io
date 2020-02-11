@@ -57,13 +57,15 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Comunidade com foco no compartilhamento de conhecimento sobre JAVA e o mundo do backend.">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <h1 className="hero__title">{siteConfig.customFields.title}</h1>
+          <p className="hero__subtitle">{siteConfig.customFields.sub}</p>
           <div className={styles.buttons}>
+          <a  className={classnames('button button--secondary button--lg',styles.btnCta,)}
+            target="_blank" rel="noopener noreferrer" href={siteConfig.customFields.link}>{siteConfig.customFields.btnTitle}</a>
             {/* <Link
               className={classnames(
                 'button button--outline button--secondary button--lg',

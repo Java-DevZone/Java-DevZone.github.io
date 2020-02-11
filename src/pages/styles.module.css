@@ -22,6 +22,17 @@
   justify-content: center;
 }
 
+.btnCta {
+  background-color: #1069A1;
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+
+.btnCta:hover {
+  background-color: #145B87;
+}
+
 .features {
   display: flex;
   align-items: center;

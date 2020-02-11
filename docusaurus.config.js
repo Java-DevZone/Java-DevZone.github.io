@@ -6,6 +6,12 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'Java-DevZone', // Usually your GitHub org/user name.
   projectName: 'Java-DevZone.github.io', // Usually your repo name.
+  customFields: {
+    title: 'Semana Master Backend Developers',
+    sub: 'Venha aprender a base para ser um desenvolvedor backend',
+    link: 'https://mailchi.mp/dfbb087dbd2b/master-developer',
+    btnTitle: 'Quero Participar'
+  },
   themeConfig: {
     navbar: {
       title: '',
