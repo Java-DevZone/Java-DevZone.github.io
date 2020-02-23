@@ -16,7 +16,7 @@ module.exports = {
     navbar: {
       title: '',
       logo: {
-        alt: 'Logo do Java DevZone',
+        alt: 'Java DevZone',
         src: 'img/logo.svg',
       },
       hideOnScroll: true,

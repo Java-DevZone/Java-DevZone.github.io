@@ -24,11 +24,11 @@ const features = [
     description: (
       <>
         Fazemos parte da <bold>
-          <a href="https://collabcode.training/" target="_blank">Collabcode</a>
+          <a href="https://discord.gg/FP5UaAG" target="_blank">Collabcode</a>
         </bold>, uma comunidade focada na troca de conhecimentos, onde cada um contribui como pode e ajuda o próximo para que todos alcancem seus objetivos e realizem seus sonhos..
       </>
     ),
-    btnUrl: 'https://collabcode.training/',
+    btnUrl: 'https://discord.gg/FP5UaAG',
     btnDesc: 'Go Collabcode'
   },
 ];
